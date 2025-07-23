@@ -18,7 +18,4 @@ public class RegisterRequest {
     private String firstName;
     private String lastName;
 
-    public Object register(@Valid RegisterRequest request) {
-        return
-    }
 }
