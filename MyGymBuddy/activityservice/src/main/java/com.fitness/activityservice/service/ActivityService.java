@@ -1,10 +1,10 @@
-package com.example.activityservice.service;
+package com.fitness.activityservice.service;
 
-import com.example.activityservice.ActivityRepository;
-import com.example.activityservice.dto.ActivityRequest;
-import com.example.activityservice.dto.ActivityResponse;
+import com.fitness.activityservice.dto.ActivityRequest;
+import com.fitness.activityservice.dto.ActivityResponse;
+import com.fitness.activityservice.model.Activity;
+import com.fitness.activityservice.repository.ActivityRepository;
 import lombok.RequiredArgsConstructor;
-import model.Activity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
