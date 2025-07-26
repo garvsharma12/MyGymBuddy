@@ -1,3 +1,6 @@
+server:
+  port: 8082
+
 spring:
   application:
     name: activity-service
@@ -5,6 +8,18 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/fitnessactivity
+      database: fitnessactivity
 
-server:
-  port: 8082
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+rabbitmq:
+  exchange:
+    name: fitness.exchange
+  queue:
+    name: activity.queue
+  routing:
+    key: activity.tracking
