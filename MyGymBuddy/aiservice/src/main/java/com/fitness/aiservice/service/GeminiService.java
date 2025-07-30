@@ -24,17 +24,19 @@ public class GeminiService {
 
     public String getAnswer(String question){
         Map<String,Object> requestBody = Map.of("contents", new Object[]{
-                Map.of("patrs", new Object[]{
+                Map.of("parts", new Object[]{
                         Map.of("text", question)
                 })
         });
-        String response = webClient.post()
-                .uri(geminiApiUrl + geminiApiKey)
+        String full_url = geminiApiUrl+geminiApiKey;
+        System.out.println("requestBody is "+requestBody);
+        System.out.println("full_url is "+full_url);
+        return webClient.post()
+                .uri(full_url)
                 .header("Content-Type", "application/json")
                 .bodyValue(requestBody)
                 .retrieve()
                 .bodyToMono(String.class)
                 .block();
-        return response;
     }
 }
