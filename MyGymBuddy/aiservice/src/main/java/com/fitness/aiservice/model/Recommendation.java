@@ -23,10 +23,11 @@ public class Recommendation {
     private String activityId;
     private String userId;
     private String recommendation;
+    private String activityType; // ✅ Add this field
+    private List<String> safety;
     private List<String> improvements;
     private List<String> suggestions;
 
     @CreatedDate
     private LocalDateTime createAt;
-
 }
