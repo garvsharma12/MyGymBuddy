@@ -64,9 +64,12 @@
 
 ---
 
-## 🧪 Getting Started
+📌 Future Enhancements
 
-### Backend Setup
-```bash
-cd backend
-./mvnw spring-boot:run
+    📱 Integration with Google Fit / Apple Health
+
+    🧠 Gemini-powered AI chatbot coach
+
+    📈 Trainer dashboard for managing clients
+
+    🔔 Push notifications for reminders and milestones
